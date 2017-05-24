@@ -1,0 +1,72 @@
+@media print {
+    body {margin:0;padding:0;}
+    a[href]:after {
+	    content: none !important;
+	  }
+		.page-container { padding:0; }
+    .col-md-6, .col-lg-6 { 
+    	width:50%; 
+    	float:left;
+    }
+    site-header .logo{
+    	display: block !important;
+    }
+    .site-title{
+    	font-size: 24px;
+    	border-bottom: 1px solid #CCC;
+    }
+    #price{
+    	font-size: 14px;
+    }
+    #ready{
+    	font-size: 12px;
+    }
+    #mainPhone{
+    	font-size: 18px;
+    }
+    #legal{
+    	font-size: 10px;
+    }
+    #highlights .highlight-title{
+    	font-size: 16px;
+    }
+    #highlights td, #highlights span, #highlights p{
+    	font-size: 12px;
+    }
+    .stars{
+    	display: block !important;
+    }
+    .re-header-help-text{
+    	display: none !important;
+    }
+    header a,#highlights a,#next-step a, .footer a {
+    	display:none !important;
+    }
+    .phone-number span{
+    	display: block !important;
+    }
+    .fat-footer-header, .footer-phone, .footer-avlbl-time{
+    	display: none !important;
+    }
+    .button-bar.footer-content-bottom{
+    	display: none !important;
+    }
+    #fat-footer .col-md-4 { 
+    	width:48%; 
+    	float:left;
+    }
+    #fat-footer .col-md-4:first-child { 
+    	display:none; 
+    }
+    .fat-footer-rating-number{
+    	vertical-align: top !important;
+    	margin-top: -15px;
+    	margin-left: 10px;
+    }
+    .privacy-legal-wrapper {
+		    display: none;
+		}
+		footer{
+			border-top: none !important;
+		}
+}

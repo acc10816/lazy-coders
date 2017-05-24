@@ -1,0 +1,237 @@
+.contactDBA-Applicable{
+	    width: 30px !important;
+}
+.re-chkbox-label {
+	font-weight: normal;
+	display: inline;
+}
+.sqft-label_normal {
+	font-weight: normal;
+}
+
+.dropdown-menu {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1000;
+	display: none;
+	float: left;
+	width: 76% !important;
+	min-width: 100px;
+	padding: 5px 0;
+	margin: 2px 0 0;
+	list-style: none;
+	font-size: 14px;
+	text-align: left;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	border-radius: 0px;
+	-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+	background-clip: padding-box;
+}
+
+.dropdown-menu li strong,.dropdown-menu li b {
+	color: #3A5A78;
+}
+
+.class-list > .dropdown-menu li {
+	border-top: 1px solid #ccc;
+}
+
+.dropdown-menu > .active > a,.dropdown-menu > .active > a:hover,.dropdown-menu > .active > a:focus {
+	background: #F6F6F6;
+	color: #3A5A78;
+	text-decoration: none;
+	outline: 0;
+	cursor: pointer;    /* Added new property*/
+}
+.dropdown-menu a {
+	color: #484848;
+}
+.dropdown-menu li:last-child a,.dropdown-menu li:last-child a:hover {
+	cursor:default;
+	font-style:italic;
+	color: #484848;
+}
+.dropdown-menu li a {
+	white-space: normal;
+	width: 100%;
+	padding: 3px 10px;
+	box-Shadow: 0 0 1px 0 rgba(0, 0, 0, 0.75);
+}
+.dropdown-menu {
+	width: 90%;
+}
+.dropdown-menu {
+	max-height: 190px !important; overflow: auto !important;
+}
+.alert-warning {
+  background-color: #FEF9D4;
+  border-color: #EFC21B;
+  color: #484848;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+@dp-selected-bg: #822B2F;
+@dp-selected-border: #822B2F;
+@dp-selected-color: #FFFFFF;
+@dp-selectable-bg: #FFFFFF;
+@dp-selectable-border: #CCCCCC;
+@dp-selectable-color: #484848;
+@dp-not-selectable-bg: #DDDDDD;
+@dp-not-selectable-border: #DDDDDD;
+@dp-not-selectable-color: #666666;
+@dp-container-bg: #F6F6F6;
+@dp-container-border: #CCCCCC;
+@dp-next-day-bg: #822B2F;
+@btn-default-bg: #999999;
+@btn-default-color: #FFFFFF;
+.date-picker .btn {
+	text-transform: uppercase;
+}
+.date-picker .dropdown-menu  {
+	background-color: @dp-container-bg;
+	border-color:@dp-container-border;
+	box-Shadow: 0 0 10px 0 rgba(0,0,0,0.75);
+	padding: 15px;
+}
+.date-picker thead .btn-default {
+	font-weight: bold;
+	color:@btn-default-color;
+}
+.date-picker thead .btn-default:focus,.date-picker thead .btn-default:active{
+	background: #999;
+}
+.date-picker thead .btn-default {
+	background-color: @btn-default-bg;
+	border-color: @btn-default-bg;
+	&:active,
+	&.active, &:hover,
+	&:focus,
+	&.focus,&:active,
+	&.active {
+		background-color: @btn-default-bg;
+		border-color: @btn-default-bg;
+	}
+}
+
+.date-picker thead .btn-default:active:focus {
+	background-color: @btn-default-bg;
+}
+.date-picker li:focus, .date-picker div:focus, .date-picker table:focus {
+	outline: none;
+}
+.date-picker, .date-picker .btn, .date-picker .h6, .date-picker h6, .date-picker small  {
+	font-size:13px;
+}
+.date-picker .text-muted {
+	color: @dp-container-border;
+}
+.date-picker table {
+	border-spacing: 1px;
+	border-collapse: separate
+}
+.date-picker .btn.disabled, .date-picker .btn[disabled], .date-picker fieldset[disabled] .btn,
+.date-picker .btn.disabled .text-muted, .date-picker .btn[disabled] .text-muted, .date-picker fieldset[disabled] .btn .text-muted{
+	border-color: @dp-not-selectable-border;
+	background-color: @dp-not-selectable-bg;
+	color: @dp-not-selectable-color;
+	&:active,
+	&.active {
+		border-color: @dp-not-selectable-border;
+		background-color: @dp-not-selectable-bg;
+		color: @dp-not-selectable-color;
+	}
+}
+.date-picker .btn-default  {
+	font-weight: normal;
+	padding: 4px 10px;
+}
+.date-picker .btn-default {
+	background-color: @dp-selectable-bg;
+	border-color: @dp-selectable-border;
+	color: @dp-selectable-color;
+}
+.date-picker .btn-default.btn-info {
+	background-color: @dp-selected-bg;
+	border-color: @dp-selected-border;
+	color: @dp-selected-color;
+	font-weight: bold;
+}
+
+.date-picker .pull-left, .date-picker .pull-right{
+	min-width: inherit;
+}
+.date-picker .btn-info:active .text-info {
+	color:#FFFFFF;
+	font-weight: bold;
+}
+.date-picker .btn-default.btn-info .text-info {
+	color:#FFFFFF;
+	font-weight: bold;
+}
+.date-picker .btn:active, .date-picker .btn.active {
+	box-shadow: none;
+	&:hover,
+	&.hover
+	&:focus,
+	&.focus {
+		background-color: inherit;
+		color: inherit;
+		border-color: inherit;
+	}
+}
+.form-group .date-picker > input.form-control {
+	width:90%;
+}
+label.re-chkbox-label{
+	display: table-row;
+}
+.re-chkbox-label span{
+	display: table-cell;
+  padding-left: 7px;
+  padding-bottom: 5px;
+}
+@media(max-width:767px){
+	.form-group .date-picker > input.form-control {
+		width:100%;
+	}
+	.re-chkbox-label span{
+			display: table-cell;
+	    padding-left: 10px;
+	}
+}
+.acc-align{
+	text-align: justify;
+}
+
+/*Added new property class in custom.less */
+
+.chk-margin{
+	margin-right: -7px !important;
+}
+
+.prod-star-img {
+	font-size: 24px;
+	color: #FBC104;
+	margin: 0;
+	/* line-height:30px; */
+	margin-top: -2px;
+	margin-left: 9px;
+}
+
+.dropdown-begin-ul .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus{
+	color: #333333;
+}
+.dropdown-begin-ul .dropdown-menu li:last-child a,
+.dropdown-menu li:last-child a:hover{
+	padding: 9px 10px; /* Added Padding to increase the size for "Can't find your business"*/
+	background: none;
+}
+.pad-left-0{
+	padding-left: 0;
+	margin-left: -2px;
+}

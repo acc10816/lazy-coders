@@ -1,0 +1,28 @@
+/* The starting CSS styles for the enter animation */
+.slide-down.ng-enter {
+  opacity:1;
+  -webkit-transform:translateY(-25px);
+    -moz-transform:translateY(-25px);
+    transform:translateY(-25px);
+    -webkit-transition: all 0.25s linear;
+    -moz-transition: all 0.25s linear;
+    transition: all 0.25s linear;
+}
+
+/* The finishing CSS styles for the enter animation */
+.slide-down.ng-enter.ng-enter-active {
+  opacity:1;
+  -webkit-transform:translateY(0px);
+    -moz-transform:translateY(0px);
+    transform:translateY(0px);
+    -webkit-transition: all 0.25s linear;
+    -moz-transition: all 0.25s linear;
+    transition: all 0.25s linear;
+}
+.slide-down.ng-leave {
+  transition:none;
+  opacity:1;
+}
+.slide-down.ng-leave.ng-leave-active {
+  opacity:0;
+}

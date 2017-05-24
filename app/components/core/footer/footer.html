@@ -1,0 +1,179 @@
+﻿<div ng-controller="footerCtrl">
+<!--<div class="row" id="fat-footer" ng-if="hideFooter()">
+			<div class="col-md-4">
+				<div class="fat-footer-block">
+					<div class="fat-footer-header">Questions? Call The Hartford:</div>
+					<div class="footer-content">
+						<div class="footer-phone"><phone-number></div>
+						<span class="no-wrap footer-avlbl-time">{{codeLists.global.hoursOfOperationDesktop}}</span>
+					</div>
+					<hr>
+					<div class="button-bar footer-content-bottom">
+						<div class="re-utility-links" ng-show="!isHoursOfOperation && !isBlacklisted || isWeekend">
+							<a href="" class="a-no-decoration" ng-controller="callCtrl" ng-click="open()">
+								<span class="fa fa-phone"></span> <span>Request a Call</span>
+							</a>
+						</div>
+						<div class="re-utility-links hidden-xs" ng-show="isHoursOfOperation && !isWeekend">
+							<div id="footerChatLinkContainer">
+								<div id="footerChatLink">
+									<div id="footerChatLinkInfo">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="re-utility-links">
+							<a href="" class="a-no-decoration" tealium-link data-dl = '{"id":"FAQ","location": "footer","type":"modal launch","da_track":"true"}' id="faqModal-footer" ng-controller="faqCtrl" ng-click="open()">
+								<span class="fa fa-faq"></span> <span>FAQ</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4" ng-if="!isAARP">
+				<div class="fat-footer-block">
+					<div class="uppercase footer-content mi-crop-bus-owners">SERVING <span class="bold-text">1,000,000+</span><br/>SMALL BUSINESS OWNERS<span class="fat-footer-legal-link">3</span></div>
+					<hr style="margin-top: 4px;">
+					<div class="footer-content-bottom">
+						<div class="uppercase mi-crop-years">
+							<span class="fat-footer-yib-block-1">200+</span> 
+							<span class="fat-footer-yib-block-2">years in<br/>business<span class="fat-footer-legal-link">3</span></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4" ng-if="isAARP">
+				<div class="fat-footer-block">
+					<div class="uppercase footer-content  mi-crop-bus-owners">SERVING <span class="bold-text">1,000,000+</span><br/>SMALL BUSINESS OWNERS<span class="fat-footer-legal-link">3</span></div>
+					<hr style="margin-top: 4px;">
+					<div class="footer-content-bottom">
+						<div class="uppercase  mi-crop-years">
+							<span class="fat-footer-yib-block-1">200+</span> 
+							<span class="fat-footer-yib-block-2">years in<br/>business<span class="fat-footer-legal-link">3</span></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4" ng-if="!isAARP">
+				<div class="fat-footer-block star-experience">
+					<div class="footer-content mi-crop-stars" style="padding-bottom:1px" ng-show="showStarRating">
+						<div>
+							<a href="https://www.thehartford.com/business-insurance#reviews" target="startRating" style="text-decoration: none">
+								<span data-star="{{averageRating}}" class="star-rating">
+									<span class="star-rating-filled" ng-style="{'width':ratingDisplayWidth}"></span>
+								</span>
+								<span class="fat-footer-rating-number">{{averageRating}}/{{totalRating}}</span>
+							</a>
+						</div>
+						<div class="bold-text footer-content">Star Claim Experience<span class="fat-footer-legal-link">1</span></div>
+					</div>
+					<hr ng-class="{hideStarExperience: !showStarRating}">
+						<div class="footer-content-bottom mi-crop-ethisphere"><span class="bold-text">ETHISPHERE:</span> World&apos;s Most<br/>Ethical Company 9 times<span class="fat-footer-legal-link">2</span>
+						</div>
+				</div>
+			</div>
+			<div class="col-md-4" ng-if="isAARP">
+				<div class="fat-footer-block star-experience">
+					<div class="footer-content mi-crop-stars" style="padding-bottom:1px">
+						<div ng-show="showStarRating">
+							<a href="https://www.thehartford.com/business-insurance#reviews" target="startRating" style="text-decoration: none">
+								<span data-star="{{averageRating}}" class="star-rating">
+									<span class="star-rating-filled" ng-style="{'width':ratingDisplayWidth}"></span>
+								</span>
+								<span class="fat-footer-rating-number">{{averageRating}}/{{totalRating}}</span>
+							</a>
+						</div>
+						<div class="bold-text footer-content">Star Claim Experience<span class="fat-footer-legal-link">1</span></div>
+					</div>
+					<hr ng-class="{hideStarExperience: !showStarRating}">
+						<div class="footer-content-bottom mi-crop-ethisphere"><span class="bold-text">ETHISPHERE:</span> World&apos;s Most<br/>Ethical Company 9 times<span class="fat-footer-legal-link">2</span>
+						</div>
+				</div>
+			</div>
+		</div>-->
+    <footer class="row">
+		<div class="col-xs-12 text-center privacy-legal-wrapper">
+			<a href="https://www.thehartford.com/online-privacy-policy"
+				class="no-wrap" target="privacyPolicy">Privacy Policy</a>| <a
+				href="https://www.thehartford.com/legal-notice" class="no-wrap"
+				target="legalNotice">Legal Notice</a>
+		</div>
+		<div class="col-xs-12 text-center">
+			<span> Copyright &copy; {{date | date:'yyyy'}} The Hartford
+				Financial Services Group, Inc. All Rights Reserved.</span>
+		</div>
+		<div class="col-xs-12 legal">
+			<span ng-show="showStarRating" class="mi-crop-stars-footnote"><sup>1</sup>The Hartford&apos;s Customer Claims Ratings as of {{date | date:'MMMM'}} {{date | date:'yyyy'}} .</span>
+			<span class="mi-crop-ethisphere-footnote">
+					Hartford Financial
+				Services Group Inc. is among 124 companies recognized as a
+				&#34;World&apos;s Most Ethical Company&#34; by the Ethisphere
+				Institute, a NY - based think tank for 2017.
+			</span>
+			<span  class="mi-crop-years-bus-footnote" ng-if="!isUSAA">
+				Statistics referenced are for The Hartford.
+			</span>
+			<span  class="mi-crop-years-bus-footnote" ng-if="isUSAA">
+				This represents the sum total of all small businesses insured by The Hartford, including but not limited to USAA affiliated small businesses.
+			</span>
+			<div ng-if="isAARP">
+				<br/>
+			The AARP Small Business Insurance Program from The Hartford is underwritten by Hartford Fire Insurance Co.
+			and its property and casualty insurance affiliates, One Hartford Plaza, Hartford CT 06155, CA License # 5152.
+			In WA, this insurance is underwritten by Hartford Fire Insurance Company, Hartford Casualty Insurance Company,
+			Hartford Accident and Indemnity Company, Hartford Underwriters Insurance Company, Twin City Fire Insurance Company,
+			Sentinel Insurance Company, Ltd. and Hartford Insurance Company of the Midwest. In MI and PA, this insurance is underwritten by
+			Hartford Accident and Indemnity Company, Hartford Casualty Insurance Company, Hartford Fire Insurance Company,
+			Hartford Insurance Company of the Midwest, Hartford Insurance Company of the Southeast (PA only),
+			Hartford Underwriters Insurance Company, Property and Casualty Insurance Company of Hartford, Sentinel Insurance Company, Ltd.,
+			Twin City Fire Insurance Company and Trumbull Insurance Company.
+			<div class="bold-text">
+				<br/>
+			In Texas, the insurance is underwritten by Hartford Accident and Indemnity Company, Hartford Fire Insurance Company, Hartford Casualty Insurance Company,
+			Hartford Lloyd&apos;s Insurance Company, Hartford Insurance Company of the Midwest, Trumbull Insurance Company, Twin City Fire Insurance Company,
+			Hartford Underwriters Insurance Company, Property and Casualty Insurance Company of Hartford and Sentinel Insurance Company, Ltd.
+			</div>
+			<br/>
+			AARP and its affiliates are not insurers. The Hartford pays royalty fees to AARP for the use of its intellectual property.
+			These fees are used for the general purposes of AARP. AARP membership is required for Program eligibility in most states.
+			Specific features, credits and discounts may vary and may not be available in all states in accordance with state filings and applicable law.
+			Applicants are individually underwritten and some may not qualify. The program is currently unavailable in Canada and U.S. Territories or possessions.
+			Commercial auto insurance through the Program is not available in MA.
+			</div>
+			<div ng-if="isUSAA">
+				<br/>
+				The USAA<sup>&reg;</sup> Small Business Insurance Program from The Hartford is underwritten by Hartford Fire Insurance Co. and its property and casualty insurance affiliates,
+				One Hartford Plaza, Hartford CT 06155, CA License # 5152. In WA, this insurance is underwritten by Hartford Fire Insurance Company,
+				Hartford Casualty Insurance Company, Hartford Accident and Indemnity Company, Hartford Underwriters Insurance Company, Twin City Fire Insurance Company, Sentinel Insurance Company, Ltd. and Hartford Insurance Company of the Midwest.
+				In MI and PA, this insurance is underwritten by Hartford Accident and Indemnity Company, Hartford Casualty Insurance Company, Hartford Fire Insurance Company, Hartford Insurance Company of the Midwest, Hartford Insurance Company of the Southeast (PA only),
+				Hartford Underwriters Insurance Company, Property and Casualty Insurance Company of Hartford, Sentinel Insurance Company, Ltd., Twin City Fire Insurance Company and Trumbull Insurance Company.
+				<div class="bold-text">
+					<br/>
+					In Texas, the insurance is underwritten by Hartford Accident and Indemnity Company, Hartford Fire Insurance Company, Hartford Casualty Insurance Company,
+					Hartford Lloyd&apos;s Insurance Company, Hartford Insurance Company of the Midwest, Trumbull Insurance Company, Twin City Fire Insurance Company,
+					Hartford Underwriters Insurance Company, Property and Casualty Insurance Company of Hartford and Sentinel Insurance Company, Ltd.
+				</div>
+				<br/>
+				USAA is acting as an agent through its insurance agency affiliate, USAA General Agency, Inc. or USAA Insurance Agency, Inc.
+				The USAA Business Insurance Program offered through the agency affiliate is available only to persons eligible for USAA membership.
+				The Hartford Fire Insurance Company and its affiliates provide the insurance for this program.
+				All insurance applications are subject to underwriting to determine acceptability.
+				Product availability and coverage may vary by state. Insurance descriptions are general in nature.
+				Please refer to your policy for full disclosure of coverages, limitations and conditions.
+				<div>
+					<br/>
+					Use of the term &#34;member&#34; or &#34;membership&#34; refers to membership in USAA Membership Services and does not convey any legal or ownership rights in USAA.
+					Restrictions apply and are subject to change.
+				</div>
+				<br/>
+				USAA means United Services Automobile Association and its affiliates.
+				<div>
+					<br/>
+					237564-0217
+				</div>
+
+
+			</div>
+		</div>
+	</footer>
+</div>

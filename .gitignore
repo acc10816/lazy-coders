@@ -1,0 +1,10 @@
+# Remove these folders
+node_modules
+bower_components
+/.project
+.idea
+assets/app.con.js
+assets/app.min.js
+assets/app.con.map
+assets/app.min.js.map
+assets/css/app.min.css

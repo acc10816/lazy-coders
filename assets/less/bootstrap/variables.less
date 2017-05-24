@@ -1,0 +1,85 @@
+/**
+ * This file is used to override default bootstrap behavior (see bower_component/bootstrap/less/variables.less) and 
+ * to define new variables, those new variables are used in bs-extension file
+ * @author ACC10816
+ */
+
+/** 
+ * use 
+ * lg for 1024 or more
+ * sm for 768 to 1023 (you can use md but sm is preferred )
+ * xs for less than 768 
+ */
+ 
+//Breakpoints overrides 
+@screen-md:                  768px;
+@screen-lg:                  1024px;
+
+//Alert overrides
+@alert-success-bg:            #E5F0C8;
+@alert-success-border:        #018852;
+@alert-info-bg:               #F7F7F7;
+@alert-info-border:           #3A5A78;
+@alert-warning-bg:            #FEF9D4;
+@alert-warning-border:         #EFC21B;
+@alert-danger-bg:             #FBF7F7;
+@alert-danger-border:         #DC3942;
+
+//validation overrides
+@state-danger-text:              #DC3942;
+@state-danger-bg:                #FBF7F7;
+
+//button overrides
+@btn-default-bg: #999999;
+@btn-default-color: #FFFFFF;
+@btn-primary-bg: #822B2F;
+@btn-primary-color: #FFFFFF;
+
+//Radius overrides
+@border-radius-base:        0px;
+@border-radius-large:       0px;
+@border-radius-small:       0px;
+
+
+//fonts override
+@font-family-sans-serif:  Arial, sans-serif, "Helvetica Neue", Helvetica;
+//inputs overrides
+@padding-base-horizontal: 10px;
+@input-border-focus: #B6D3E9;
+
+//link overrides
+@link-color:            #2477BF;
+@link-hover-color: @link-color;
+
+//form overrides
+@form-group-margin-bottom: 20px;
+
+//modal overrides
+@modal-header-border-color: #CCC;
+
+//input color overrides
+@input-color : #484848;
+/** Bootstrap override ends here */
+
+/** Custom properties starts here */
+//general custom properties
+//@font-color: @input-color;
+//alerts custom properties
+@alert-padding-top-htfd: 10px;
+@alert-padding-botton-htfd: 10px;
+@alert-padding-left-htfd: 15px;
+@alert-padding-right-htfd: 15px;
+@alert-border-width: 2px;
+@alert-icon-height: 30px;
+@alert-icon-width: 35px;
+@alert-icon-size-diff: 10px;
+@icon-sprite-url: url("../img/sprite.png"); 
+@alert-icon-offset-x: 0px;
+@alert-icon-offset-y: 0px;
+@alert-icon-offset-height: 40px;
+@alert-icon-offset-width: 40px;
+//button custom properties
+@btn-min-width: 80px;
+@btn-radio-background: #F6F6F6;
+//input custom properties
+@input-background-focus: #F0F6FB;

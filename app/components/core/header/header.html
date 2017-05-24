@@ -1,0 +1,34 @@
+<div class="col-sm-12 utility-bar hidden-xs page-boundry">
+	<div class="row-content" ng-controller="headerCtrl">
+		<span class="re-header-help-text">
+			<span class="re-header-highlight">
+				<!--<span ng-class="{'hidden-md': !isHIG}"><strong>Need Help?</strong> Call The Hartford</span></span>
+				<span class="re-header-phone">
+					<phone-number>
+				</span>{{codeLists.global.hoursOfOperationDesktop}}-->
+			</span>
+		</span>
+	</div>
+</div>
+<div class="col-sm-12 page-boundry">
+	<div class="row-content">
+		<div class="button-bar btn-group">
+			<div class="re-utility-links hidden-xs">
+				<!--<div ng-show="!isHoursOfOperation && !isBlacklisted || isWeekend">-->
+					<!--<a href="" ng-controller="callCtrl" ng-click="open()" class="a-no-decoration">-->
+						<!--<span class="fa fa-phone"></span> <span>{{codeLists.global.requestACall}}</span>-->
+					<!--</a>-->
+				<!--</div>-->
+				<div>
+					<a href="" class="a-no-decoration" tealium-link data-dl = '{"id":"FAQ","location": "header","type":"modal launch","da_track":"true"}' id="faqModal-header">
+						<span class="fa fa-faq"></span> <span>Help</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="site-title hidden-md hidden-lg" class="non-hig-aarp">
+			<div>Lazy Coder's App</div>
+		</div>
+		<img class="logo" ng-src="../assets/img/hig-logo-re.gif" title="TheHartford.com" alt="TheHartford.com" ng-class="{'non-hig-logo': !isHIG}">
+	</div>
+</div>

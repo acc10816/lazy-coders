@@ -1,0 +1,157 @@
+.opt-cov-section{
+  margin-top: 18px;
+  height: auto;
+  border: 1px solid #CCC;
+  position: relative;
+}
+
+.opt-cov-section-header{
+  height: auto;
+  background: #F5F5F5;
+}
+
+.opt-cov-section-header{
+  padding: 10px;
+}
+
+.opt-cov-section-dropdown{
+  float: right;
+}
+
+.opt-cov-section-content{
+  margin: 18px 0;
+  padding: 0 15px;
+  margin-top: 13px;
+}
+
+.opt-cov-section-content-details-title:before{
+  content:"";
+  /*top: 17px;*/
+  left:-25px;
+  position:relative;
+  background-image:url(../img/sprite.png);
+  background-repeat: no-repeat;
+  width:15px;
+  height:15px;
+  display: inline-block;
+}
+
+.opt-cov-section-content-details-title{
+  color: #2477BF;
+  padding-left: 125px;
+  margin-bottom: 9px;
+}
+
+.opt-cov-section-content-details-text{
+  padding: 5px 15px 15px 100px;
+}
+
+.hideOptCovAnswers:before{
+  background-position: 2px -329px;
+}
+
+.displayOptCovAnswers:before{
+  background-position: -39px -329px;
+}
+
+#optCovBtn {
+  margin-top: 18px;
+}
+
+@media(min-width:768px){
+  .opt-cov-section-content:before, .water-ll-row:before {
+    content: "";
+    position: absolute;
+    top: 47px;
+    left: 0;
+    background-image: url(../img/sprite.png);
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 65px;
+    display: block;
+  }
+
+  #data-breach .opt-cov-section-content:before{
+    background-position: -58px -570px;
+  }
+
+  #hired-auto .opt-cov-section-content:before {
+    background-position: -124px -410px;
+  }
+
+  #employee-benefits .opt-cov-section-content:before {
+    background-position: -124px -496px;
+  }
+
+  #animal-bailee .opt-cov-section-content:before {
+    background-position: 10px -570px;
+  }
+
+  #food-contamination .opt-cov-section-content:before {
+    background-position: 10px -630px;
+  }
+
+  #liquor-liab .opt-cov-section-content:before {
+    background-position: -125px -636px;
+  }
+
+  #pet-groomers .opt-cov-section-content:before {
+    background-position: -125px -570px;
+  }
+
+  #technology-services .opt-cov-section-content:before {
+    background-position: -58px -634px;
+  }
+
+  #water-ll .opt-cov-section-content:before {
+    background-position: 3px -704px;
+    background-image: none;
+  }
+  #water-ll .water-ll-row:before {
+    background-position: 3px -704px;
+  }
+  .water-tll-row:after {
+    background-position: -60px -704px;
+    content: "";
+    position: absolute;
+    left: 0;
+    background-image: url(../img/sprite.png);
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 65px;
+    display: block;
+  }
+
+  #limited-care-custody-control .opt-cov-section-content:before {
+    background-position: -128px -704px;
+  }
+
+  #epli-id .opt-cov-section-content:before {
+    background-position: 3px -770px;
+  }
+  .opt-cov-input-label {
+    padding-left: 115px;
+    padding-top: 5px;
+  }
+
+}
+
+/* For mobiles */
+@media(max-width:767px) {
+  .opt-cov-section-header label {
+    width: 100%
+  }
+
+  .opt-cov-section-dropdown{
+    float: none;
+  }
+
+  .opt-cov-section-content-details-title{
+    color: #2477BF;
+    padding-left: 25px;
+  }
+
+  .opt-cov-section-content-details-text{
+    padding: 5px 15px 0 0;
+  }
+}

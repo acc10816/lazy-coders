@@ -1,0 +1,369 @@
+/**
+ * Define bootstrap extension in this file, to override the default behavior use variables.less file.
+ * @author ACC10816
+ */
+@import '../../../bower_components/bootstrap/less/variables.less';
+@import 'variables.less';
+//validations
+.has-error .form-control {
+	background-color: @state-danger-bg;
+}
+.btn.btn-link {
+	padding-left: 0;
+	padding-right: 0; 
+}
+.btn.btn-radio.active.focus{
+	background-color:#DDD;
+	border: 1px solid #CCC;
+}
+.btn-primary, .btn-danger, .btn-default  {
+	font-weight: bold;
+}
+
+.btn-group .btn-radio:focus, .btn-group .btn-radio.focus {
+    outline:0; 
+    border:1px solid #B6D3E9;
+    background:#F0F6FB;
+}
+
+.btn:hover {
+	text-decoration: underline;
+}
+.btn:active {
+	box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.50);
+	border-top:1px solid #444;
+	border-left:1px solid #444;
+}
+.btn:focus {
+	border:1px #FFF;
+	box-shadow:0 0 5px 0px #4a7aCC;
+}
+.btn:hover, .btn:focus, .btn.focus{
+	/*color: #484848;*/
+  background-color: #F6F6F6;
+}
+
+.form-control {
+	display: inline-block;
+}
+.btn.btn-radio.active:focus {
+  /* 		background-color:#DDD; */
+	}
+//alerts this is to customize alerts
+@alert-min-height: @alert-icon-height + @alert-padding-top-htfd + @alert-padding-botton-htfd;
+.alert-success {
+	padding: @alert-padding-top-htfd @alert-padding-right-htfd @alert-padding-botton-htfd @alert-padding-left-htfd;
+	border-width: @alert-border-width;
+	min-height: @alert-min-height;
+	@media(max-width: @screen-xs-max){
+		min-height: @alert-min-height - 2*@alert-icon-size-diff;
+	}
+} 
+.alert-success::before {
+	content:"\00a0";
+	float:left;
+	background: @icon-sprite-url;
+	height:@alert-icon-height;
+	position: absolute;
+	width:@alert-icon-width;
+	background-position: @alert-icon-offset-x @alert-icon-offset-y;
+	
+	@media(max-width: @screen-xs-max){
+		height:@alert-icon-height - @alert-icon-size-diff;
+		width:@alert-icon-width - @alert-icon-size-diff;
+		background-position: -(@alert-icon-offset-x + @alert-icon-offset-width) @alert-icon-offset-y;
+	}
+	
+}
+.alert-success>span, .alert-info>span, .alert-warning>span, .alert-danger>span,
+.alert-success>div, .alert-info>div, .alert-warning>div, .alert-danger>div {
+	display: inherit;
+	margin-top: 5px;
+    margin-left: 37px;
+    font-size: 13px;
+    font-weight: bold;
+    color: @input-color;
+    @media(max-width: @screen-xs-max){
+    	font-size: 14px;
+    	margin-top: 0px;
+    	margin-left: 25px;
+    }
+}
+
+.alert-danger {
+	padding: @alert-padding-top-htfd @alert-padding-right-htfd @alert-padding-botton-htfd @alert-padding-left-htfd;
+	border-width: @alert-border-width;
+	min-height: @alert-min-height;
+	@media(max-width: @screen-xs-max){
+		min-height: @alert-min-height - 2*@alert-icon-size-diff;
+	}
+} 
+.alert-danger::before {
+	content:"\00a0";
+	height:@alert-icon-height;
+	width:@alert-icon-width;
+	float:left;
+	background: @icon-sprite-url;
+	background-position: @alert-icon-offset-x -(@alert-icon-offset-y + @alert-icon-offset-height);
+	@media(max-width: @screen-xs-max){
+		/* height:@alert-icon-height - @alert-icon-size-diff; */
+		width:@alert-icon-width - @alert-icon-size-diff;
+		background-position: -(@alert-icon-offset-x + @alert-icon-offset-width) -(@alert-icon-offset-y + @alert-icon-offset-height);
+	}
+}
+.alert-warning {
+	padding: @alert-padding-top-htfd @alert-padding-right-htfd @alert-padding-botton-htfd @alert-padding-left-htfd;
+	border-width: @alert-border-width;
+	min-height: @alert-min-height;
+	@media(max-width: @screen-xs-max){
+		min-height: @alert-min-height - 2*@alert-icon-size-diff;
+	}
+} 
+.alert-warning::before {
+	content:"\00a0";
+	height:@alert-icon-height;
+	width:@alert-icon-width;
+	float:left;
+	background: @icon-sprite-url;
+	background-position: @alert-icon-offset-x -(@alert-icon-offset-y + 2*@alert-icon-offset-height);
+	@media(max-width: @screen-xs-max){
+		/* height:@alert-icon-height - @alert-icon-size-diff; */
+		width:@alert-icon-width - @alert-icon-size-diff;
+		background-position: -(@alert-icon-offset-x + @alert-icon-offset-width) -(@alert-icon-offset-y + 2*@alert-icon-offset-height);
+	}
+}
+
+.alert-info {
+	padding: @alert-padding-top-htfd @alert-padding-right-htfd @alert-padding-botton-htfd @alert-padding-left-htfd;
+	border-width: @alert-border-width;
+	min-height: @alert-min-height;
+	@media(max-width: @screen-xs-max){
+		min-height: @alert-min-height - 2*@alert-icon-size-diff;
+	}
+} 
+.alert-info::before {
+	content:"\00a0";
+	height:@alert-icon-height;
+	width:@alert-icon-width;
+	float:left;
+	background: @icon-sprite-url;
+	background-position: @alert-icon-offset-x -(@alert-icon-offset-y + 3*@alert-icon-offset-height);
+	@media(max-width: @screen-xs-max){
+		/* height:@alert-icon-height - @alert-icon-size-diff; */
+		width:@alert-icon-width - @alert-icon-size-diff;
+		background-position: -(@alert-icon-offset-x + @alert-icon-offset-width) -(@alert-icon-offset-y + 3*@alert-icon-offset-height);
+	}
+}
+
+.btn {
+	min-width: @btn-min-width;
+}
+/** Radio button styling */
+div.has-error label.btn-radio {
+	background-color: @state-danger-bg;
+	border-color: @state-danger-text;
+}
+
+.btn-radio {
+	color: @input-color;
+	background-color: @btn-radio-background;
+	border-color:  @btn-default-border;
+}
+.btn-radio:focus,
+.btn-radio.focus {
+	color: @input-color;
+  	background-color: @input-background-focus;
+  	border-color: @input-border-focus;
+}
+.btn-radio:hover {
+  color: @input-color;
+  background-color: darken(@btn-radio-background, 10%);
+  border-color: #AAAAAA;
+  text-decoration:underline;
+}
+.btn-radio:active,
+.btn-radio.active,
+.open > .dropdown-toggle.btn-radio {
+  color: @input-color;
+  background-color: darken(@btn-radio-background, 10%);
+  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.50);
+}
+.btn-radio:active:hover,
+.btn-radio.active:hover,
+.open > .dropdown-toggle.btn-radio:hover,
+.btn-radio:active:focus,
+.btn-radio.active:focus,
+.open > .dropdown-toggle.btn-radio:focus,
+.btn-radio:active.focus,
+.btn-radio.active.focus,
+.open > .dropdown-toggle.btn-radio.focus {
+  color: @input-color;
+  //background-color: #6e6e6e;
+  //border-color: #8c8c8c;
+}
+.btn-radio:active,
+.btn-radio.active,
+.open > .dropdown-toggle.btn-radio {
+  //background-image: none;
+}
+.btn-radio.disabled,
+.btn-radio[disabled],
+fieldset[disabled] .btn-radio,
+.btn-radio.disabled:hover,
+.btn-radio[disabled]:hover,
+fieldset[disabled] .btn-radio:hover,
+.btn-radio.disabled:focus,
+.btn-radio[disabled]:focus,
+fieldset[disabled] .btn-radio:focus,
+.btn-radio.disabled.focus,
+.btn-radio[disabled].focus,
+fieldset[disabled] .btn-radio.focus,
+.btn-radio.disabled:active,
+.btn-radio[disabled]:active,
+fieldset[disabled] .btn-radio:active,
+.btn-radio.disabled.active,
+.btn-radio[disabled].active,
+fieldset[disabled] .btn-radio.active {
+  //background-color: #999999;
+  //border-color: #ccc;
+}
+.btn-radio .badge {
+  color: #999999;
+  background-color: #FFFFFF;
+}
+
+
+//input form control overrides
+@border-color: @input-border;
+.form-control {
+    border-color: @border-color;
+    .box-shadow(inset 0 1px 2px rgba(0,0,0,.15)); // Redeclare so transitions work
+    &:focus {
+      border-color: darken(@input-border-focus, 10%);
+      background:@input-background-focus;
+      @shadow: inset 0 1px 2px rgba(0,0,0,.15), 0 0 6px lighten(@input-border-focus, 20%);
+      .box-shadow(@shadow);
+    }
+    &:disabled {
+      border-color: #EEE;
+      background:#EEE;
+      color: #666;
+      box-shadow:none;
+    }
+  }
+  
+  
+//button overrides
+.btn {
+    padding: 6px 15px;
+}
+
+.btn-primary {
+	background-color: @btn-primary-bg;
+    border-color: @btn-primary-bg;
+	&:active,
+  	&.active, &:hover,
+    &:focus,
+    &.focus,&:active,
+  	&.active {
+  		background-color: @btn-primary-bg;
+    	border-color: @btn-primary-bg;
+  	}
+}
+
+.btn-default {
+	background-color: @btn-default-bg;
+    border-color: @btn-default-bg;
+	&:active,
+  	&.active, &:hover,
+    &:focus,
+    &.focus,&:active,
+  	&.active {
+  		background-color: @btn-default-bg;
+    	border-color: @btn-default-bg;
+  	}
+}
+
+.btn-default:active:focus {
+	background-color: @btn-default-bg;
+}
+
+.btn-primary:active:focus {
+	background-color: @btn-primary-bg;
+}
+
+.btn:active:focus {
+    /* MOUSE DOWN*/
+    outline: 0;
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.50);
+    border: 1px solid #999;
+    border-top: 1px solid #444;
+    border-left: 1px solid #444;
+}
+
+.btn-primary:active:focus {
+    border: 1px solid #822b2f;
+    border-top: 1px solid #444;
+    border-left: 1px solid #444;
+}
+
+.btn:focus {
+    border: 1px solid #FFF;
+    outline: 0;
+    box-shadow: 0 0 5px 0px #4a7aCC;
+}
+
+.btn-primary:focus, .btn-primary:active {
+    border: 1px solid #FFF;
+    background-color: #822B2F;
+}
+.btn-default:focus, .btn-default:active{
+    background: #999;
+}
+.btn-radio:focus {
+    border-width: 1px;
+    border-color: #B6D3E9;
+    box-shadow: none;
+}
+
+.modal-header {
+	border-top: 6px solid #B6D3E9;
+}
+
+.modal-footer {
+	border-top: none;
+	padding-top:0;
+	padding-bottom:0;
+}
+
+input[type="checkbox"], input[type="radio"]{
+	margin-right: 5px;
+	cursor: pointer;
+}
+.dropdown-menu li:last-child strong{
+	font-weight: normal;
+	color: #484848;
+}
+.modal-title{
+	font-size: 20px;
+	font-weight: bold;
+}
+button.close, button.close:hover{
+ opacity: 1;
+}
+@media(max-width:767px) {
+	input.form-control, select.form-control, textarea.form-control, .btn {
+		font-size: 16px !important;
+	} 
+	input.form-control, select.form-control {
+		height: 40px;
+	}
+	.btn {
+   		padding:8px 15px;
+	}
+	.btn.btn-primary[disabled]{
+		background-position: 80px 9px;
+	    padding-left: 13px;
+	    padding-right: 33px;
+    }
+}

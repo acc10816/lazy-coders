@@ -1,0 +1,57 @@
+<!DOCTYPE html >
+
+<html lang="en" ng-app="RE" class="no-js">
+<head>
+	<meta charset="utf-8">
+	<title idle-disabled="true">Code-a-Thon 2017 | The Hartford</title>
+	<meta name="description" content="Protect your small business with a customized small business insurance quote from The Hartford with the right coverage options to help you prevail">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/assets/css/app.min.css" />
+
+</head>
+<body>
+<div class="header-container container-fluid">
+	<div class="row">
+		<site-header></site-header>
+	</div>
+</div>
+<div class="page-title title-container container-fluid">
+	<div class="row page-boundry">
+		<page-title></page-title>
+	</div>
+</div>
+<div class="page-container container-fluid" >
+	<div class="row page-boundry ng-cloak">
+		<div class="col-md-12" id="body-panel">
+			<div ui-view="nav" id="siteHeader"></div>
+			<!--<div ng-controller="siteNotificationCtrl" class="row page-content-container">
+				<site-notification></site-notification>
+			</div>-->
+			<div ui-view="content" class="row page-content-container"></div>
+		</div>
+		<!--<div class="col-md-4 right-rail" id="right-rail" ng-controller="rightRailCtrl" >
+			<right-rail ></right-rail>
+		</div>-->
+	</div>
+</div>
+<div class="footer-container container-fluid ng-cloak">
+	<!-- Its first elements already have 'row' so don't need to to include row class here -->
+	<site-footer></site-footer>
+</div>
+
+<script src='/node_modules/jquery/dist/jquery.min.js'></script>
+<script src='/node_modules/angular/angular.min.js'></script>
+<script	src='/node_modules/angular-ui-router/release/angular-ui-router.min.js'></script>
+<script src='/node_modules/angular-route/angular-route.min.js'></script>
+<!--<script src='/node_modules/angular-animate/angular-animate.min.js'></script>-->
+<script src="/assets/js/sprintf.js"></script>
+<script src="/app/app.js"></script>
+<script src="/app/shared/services/userInfoService.js"></script>
+<script src="/app/shared/services/saveService.js"></script>
+<script src="/app/components/begin/begin.js"></script>
+<script src="/app/components/core/page-title/page-title.js"></script>
+<script src="/app/components/core/rightRail/rightRail.js"></script>
+<script src="/app/components/main/main.js"></script>
+<script src="/app/shared/directives/directives.js"></script>
+</body>
+</html>

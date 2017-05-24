@@ -1,0 +1,140 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+
+.headerRow{
+	background-color:#999999;
+	align:right;
+}
+
+.hasbg {
+  background-size: cover;
+  background: #FFFFFF url(../assets/img/smallIcon.jpg) no-repeat;
+}
+
+aside{
+	background-color: #40547C;
+	font-color: #FFFFFF;
+}
+
+/*TODO: find proper fix for this bug in bootstrap */
+#fooModal{
+  padding-right: 2px!important;
+
+}
+.modal-dialog{
+    /*margin: 0px!important;*/
+    /*padding: 7px!important;*/
+}
+
+
+/*animations*/
+.help.ng-enter {
+  -webkit-animation: 0.5s fade-in;
+  -moz-animation: 0.5s fade-in;
+  -o-animation: 0.5s fade-in;
+  animation: 0.5s fade-in;
+  z-index: 100;
+}
+
+.help.ng-leave {
+  -webkit-animation: 0.5s fade-out;
+  -moz-animation: 0.5s fade-out;
+  -o-animation: 0.5s fade-out;
+  animation: 0.5s fade-out;
+  z-index:99;
+}
+
+.re-field-label-inline {
+	font-weight: bold;
+}
+.re-section-header {
+	font-size: 24px;
+	font-family: 'ProximaNova-Semibold';
+	color: #3A5A78 ;
+	padding-top:10px;
+}
+.re-full-width-input {
+	display: inline-flex;
+    width: 100%;
+}
+.re-full-width-input input, .re-full-width-input select{
+	width: 90%;
+	display: inline-block;
+}
+
+@media(max-width:767px) {
+  .re-full-width-input input, .re-full-width-input select{
+    width: 85%;
+    display: inline-block;
+  }
+}
+@media(max-width:339px) {
+  .re-full-width-input input, .re-full-width-input select{
+    width: 80%;
+    display: inline-block;
+  }
+}
+.re-full-width-input span {
+	padding-left: 5px;
+}
+.re-icon-invisible {
+	visibility: hidden;
+}
+
+.re-header-help-text {
+	font-family: Arial;
+	font-size: 13px;
+	color: #000000;
+}
+.re-header-phone a,  .re-header-phone span{
+	font-family: Arial;
+	font-size: 16px;
+	color: #000000;
+	text-decoration: none;
+	font-weight: bold;
+}
+.re-font-bold {
+	font-weight: bold;
+}
+.re-select-width
+{
+	width: 60%;
+}
+.re-mobile-call-me-now {
+	float:right;
+	margin-top: 8px;
+}
+
+#wc-note {
+  margin-top: 20px;
+}
+
+

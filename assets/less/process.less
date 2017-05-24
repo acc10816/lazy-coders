@@ -1,0 +1,110 @@
+.processing-wrapper{
+	border: 1px solid #888888;
+	margin: 0 auto;
+	text-align: center;
+}
+.processing-border{
+	border-top: 5px solid #B7D3E9;
+}
+.processing-wrapper p{
+	margin-bottom: 0px;
+	margin-top: 0;
+}
+.processing-quote-text{
+	color: #3A5A78;
+	font-family: 'Arial Bold', 'Arial';
+	font-size: 16px;
+	font-weight: bold;
+	display: inline-block;
+	margin-top: 20px;
+}
+.processing-quote-info .processing-message{
+	margin-bottom: 15px;
+    display: inline-block;
+    
+}
+.processing-image{
+	margin-bottom: 15px;
+	margin-top: 10px;
+	height: 19px; 
+}
+.processing-save-quote{
+		display: block;
+    padding: 20px 13px;
+    background: #F6F6F6;
+}
+.processing-email-message{
+		display: table-row;
+    padding: 20px;
+    padding-top: 15px;
+}
+.processing-email-message img{
+	display: table-cell;
+	vertical-align:top;
+}
+.processing-email-message span{
+		display: table-cell;
+    width: auto;
+    vertical-align: top;
+    text-align: left;
+    font-family: 'Arial Bold', 'Arial';
+    font-size: 13px;
+    font-weight: bold;
+}
+.email-icon {
+  /*display: table-cell;*/
+  width: 49px;
+  height: 30px;
+  margin-top: 1px;
+  background: url('../img/sprite.png') 109px -345px;
+  position:relative;
+}
+.progress-bar-success {
+    background-color: #EA9047;
+}
+@keyframes progress-bar-stripes {
+  from {
+    background-position: 0px 0;
+  }
+  to {
+    background-position: 40px 0;
+  }
+}
+.progress-container{
+	padding:0 68px;
+	padding-top: 10px;	
+}
+.progress {
+	background: none;
+	margin-bottom: 0px;
+}
+
+.processing-model-content{
+  margin: 0 auto;
+  width: 350px;
+}
+
+.progress-striped .progress-bar-success {
+	background-image: -webkit-linear-gradient(130deg, rgba(255, 255, 255, 0.15) 30%, transparent 36%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+	background-image: -o-linear-gradient(130deg, rgba(255, 255, 255, 0.15) 30%, transparent 36%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+	background-image: linear-gradient(130deg, rgba(255, 255, 255, 0.15) 30%, transparent 36%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+	border-radius: 3px;
+	height: 12px;
+}
+.progress.active .progress-bar,
+.progress-bar.active {
+  -webkit-animation: progress-bar-stripes 2s linear infinite;
+  -o-animation: progress-bar-stripes 2s linear infinite;
+  animation: progress-bar-stripes 2s linear infinite;
+}
+@media (max-width: 767px){
+	.processing-wrapper{
+		width: auto;
+	}
+	.processing-email-message{
+		width: auto;	
+	}
+	.processing-model-content{
+	 width: 290px;
+	}
+}	
